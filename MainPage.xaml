@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPublicaciones.MainPage">
+
+    <ScrollView>
+        <Frame Margin="10,0,10,0" VerticalOptions="Center">
+            <VerticalStackLayout>
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    HorizontalOptions="Start"
+                    Text="Titulo"/>
+                <Entry
+                    x:Name="txtTitulo"/>
+                <Label 
+                    FontAttributes="Bold"
+                    FontSize="Medium"
+                    HorizontalOptions="Start"
+                    Text="Publicacion"/>
+                <Entry
+                    x:Name="txtPublicacion"/>
+                <Button
+                    x:Name="btnPublicar"
+                    Text="Enviar Publicacion"
+                    Clicked="btnPublicar_Clicked"/>
+            </VerticalStackLayout>
+        </Frame>
+    </ScrollView>
+
+</ContentPage>
